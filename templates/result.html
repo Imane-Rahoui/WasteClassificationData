@@ -1,13 +1,14 @@
 {% extends "main.html" %} {% block content %}
-
     <div>
-        <form id="upload-file" method="post" enctype="multipart/form-data">
-            <label for="imageUpload" class="btn btn-secondary btn-lg">
-                Upload image <i class="fa-solid fa-upload"></i>
-            </label>
-            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-        </form>
 
+        <div class="text-center">
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <label for="imageUpload" class="btn btn-secondary btn-lg ">
+                    Upload image <i class="fa-solid fa-upload"></i>
+                </label>
+                <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+            </form>
+        </div>
         <div class="image-section" style="display:none;">
             <table>
                 <thead>
@@ -21,7 +22,7 @@
                 <tbody>
                 <tr>
                     <th scope="row"></th>
-                    <td colspan="3">
+                    <td colspan="3" >
                         <h4>Is It an organic or recyclable object ?</h4>
 
                         <div class="img-preview">
